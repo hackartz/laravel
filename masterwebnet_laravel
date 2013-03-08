@@ -1,0 +1,11 @@
+deploy laravel di shared hosting masterwebnet
+
+step 1 : pindahkan isi folder public ke directory www masterwebnet
+
+step 2 : buat folder di public folder dari shared hosting , misal nama foldernya larva
+
+step 3 : pindahkan folder laravel kecuali folder public ke public folder di shared hosting
+
+step 4 : edit file index.php di folder www (step 1) , tambahkan/edit require 'folder_public_shared_hosting/paths.php';
+
+step 5 : edit file paths.php di folder larva (step 2) , tambahkan/edit $paths['public'] = 'sesuaikan_directory/www';
